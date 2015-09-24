@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ITCO - Servicios</title>
+
+        <link href="jquery-ui.css" rel="stylesheet">
+        <link href="assets/stylesheets/amain.css" rel="stylesheet">
+        <link href="images/favicon.png" rel="shortcut icon" type="image/png"/>
+        <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400"
+            rel="stylesheet">
+        <style>
+			ul.a {
+				list-style-type: circle;				
+				padding-left: 10px;
+				margin-left: 10px;
+			}
+            .demoHeaders {
+                margin-top: 2em;
+            }
+            #dialog-link {
+                padding: 0.4em 1em 0.4em 20px;
+                text-decoration: none;
+                position: relative;
+            }
+            #dialog-link span.ui-icon {
+                margin: 0 5px 0 0;
+                position: absolute;
+                left: 0.2em;
+                top: 50%;
+                margin-top: -8px;
+            }
+            #icons {
+                margin: 0;
+                padding: 0;
+            }
+            #icons li {
+                margin: 2px;
+                position: relative;
+                padding: 4px 0;
+                cursor: pointer;
+                float: left;
+                list-style: none;
+            }
+            #icons span.ui-icon {
+                float: left;
+                margin: 0 4px;
+            }
+            .fakewindowcontain .ui-widget-overlay {
+                position: absolute;
+            }
+            select {
+                width: 200px;
+            }
+			
+			.accordion {
+			  position: relative;
+			  background-color: #fff;
+			  display: inline-block;
+			  width: 100%;
+			  border-top: 1px solid #f1f4f3;
+			  border-bottom: 1px solid #f1f4f3;
+			  font-weight: 700;
+			  color: #74777b;
+			  vertical-align: middle;
+			}
+
+			.accordion .fa {
+			  position: relative;
+			  float: right;
+			}
+
+			.accordion h4 {
+			  position: relative;
+			  top: 0.8em;
+			  margin: 0;
+			  font-size: 14px;
+			  font-weight: 700;
+			}
+
+			.accordion a {
+			  position: relative;
+			  display: block;
+			  color: #74777b;
+			  padding: 1em 1em 2.5em 1em;
+			  text-decoration: none;
+			}
+
+			.accordion a:hover {
+			  text-decoration: none;
+			  color: #2cc185;
+			  background-color: #e7ecea;
+			  transition: 0.3s;
+			}
+
+			.accordion-desc {
+			  background-color: #f1f4f3;
+			  color: #74777b;
+			  z-index: 2;
+			  padding: 20px 15px;
+			}
+			 
+
+        </style>
+
+       
+    </head>
+    <body>
+        <!-- Header -->
+
+        <header class="primary-header container group">
+
+            <h1 class="logo"
+                style="border-top-width: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+                <img alt="Smiley face" height="200" src="logo.png" width="300">
+                <!--<a href="inicio.html">ITCO</a>-->
+            </h1>
+
+            <h3 class="tagline"></h3>
+
+            <nav class="nav primary-nav">
+                 <ul>
+				  <li><a href="inicio.html">Inicio</a></li><!--
+				  --><li><a href="servicios.html">Servicios</a></li><!--
+				  --><li><a href="capacitacion.html">Capacitación</a></li><!--
+				  --><li><a href="beneficios.html">Beneficios</a></li><!--
+				  --><li><a href="contacto.html">Contacto</a></li>
+				</ul>
+            </nav>
+
+        </header>
+
+        <section class="row" style="padding-top: 0px;">
+            <div class="grid">
+                <div class="accordion-container">
+       <div class="container">
+            <div class="accordion">
+                 <a href="#"><h4>Estrategia Empresarial</h4><i class="fa fa-plus-circle"></i></a>
+            </div>
+            <div class="accordion-desc">
+				<ul class="a">
+					<li>Implementación/mejora del Gobierno Corporativo.</a></li>
+					<li>Estrategias de eficiencia operativa y financiera. </a></li>
+					<li>Planes de continuidad de negocios. </a></li>
+					<li>Fusiones y adquisiciones. </a></li>
+					<li>Conformación de comités de apoyo a Juntas Directivas y Gerencias Generales</a></li>
+					<li>Asesoría en riesgos.  (Basado en COSO y en Normativa Prudencial emitida por los órganos supervisores)..</a></li>
+					<li>Capacitaciones en gobierno corporativo, procesos, riesgos, control interno y temas afines.</a></li>
+				</ul>
+            </div>
+            <div class="accordion">
+                 <a href="#"><h4>Tecnologías de Información</h4><i class="fa fa-plus-circle"></i></a>
+            </div>
+            <div class="accordion-desc">
+				<ul class="a">
+					<li>CTI -	Consultorías de TI</a></li>
+					<li>APC -	Aplicación CobiT</a></li>
+					<li>ATI -	Auditoría de TI</a></li>
+					<li>ADP -	Administración de proyectos</a></li>
+					<li>CAP -	Capacitaciones</a></li>
+					<li>OUT -	Outsourcing</a></li>
+					<li>DEM -	Desarrollos a la medida</a></li>
+					<li>GAB -	Google Apps Bussiness (Cloud Computing)</a></li>
+				</ul>
+            </div>
+            <div class="accordion">
+                 <a href="#"><h4>Procesos</h4><i class="fa fa-plus-circle"></i></a>
+            </div>
+            <div class="accordion-desc">
+				<ul class="a">
+					<li>Mejoras de procesos a través de la metodología Lean Six Sigma</a></li>
+					<li>Análisis y re-estructuración de costos y gastos.</a></li>
+					<li>Análisis y mejora de procesos operativos, productivos, comerciales, de distribución y financieros.</a></li>
+					<li>Formulación, evaluación y administración de proyectos.</a></li>
+				</ul>
+            </div>
+            <div class="accordion">
+                 <a href="#"><h4>Apoyo Administrativo</h4><i class="fa fa-plus-circle"></i></a>
+            </div>
+            <div class="accordion-desc">
+                <ul class="a">
+					<li>Análisis y mejora de procesos de soporte.</a></li>
+					<li>Reportes financieros, contables, indicadores clave y tableros de control.</a></li>
+					<li>Rediseño de estructura organizativa y elaboración de manuales de puestos.</a></li>
+					<li>Códigos de ética, políticas y procedimientos.</a></li>
+					<li>Auditoría Interna.</a></li>
+					<li>Análisis, diseño e implementación de sistemas de control interno .</a></li>
+					<li>Auditoría externa.</a></li>
+					<li>Administración y control de proyectos de desarrollo inmobiliario.</a></li>
+				</ul>
+            </div>
+       </div><!-- end of container -->
+  </div><!-- end of accordion-container -->
+            </div><!--end grid -->
+        </section>
+
+        <!-- Footer -->
+
+        <footer class="primary-footer container group">
+
+            <!--<small>&copy; Styles Conference</small>-->
+
+            <nav class="nav">
+                 <ul>
+				  <li><a href="inicio.html">Inicio</a></li><!--
+				  --><li><a href="servicios.html">Servicios</a></li><!--
+				  --><li><a href="capacitacion.html">Capacitación</a></li><!--
+				  --><li><a href="beneficios.html">Beneficios</a></li><!--
+				  --><li><a href="contacto.html">Contacto</a></li>
+				</ul>
+            </nav>
+
+        </footer>
+
+        <script src="external/jquery/jquery.js"></script>
+        <script src="jquery-ui.js"></script>
+        <script>
+
+            $(document).ready(function() {
+				 $(".accordion-desc").fadeOut(0);
+				 $(".accordion").click(function() {
+					  $(".accordion-desc").not($(this).next()).slideUp('fast');
+					  $(this).next().slideToggle(400);
+				 });
+			});
+
+            var availableTags = [
+                "ActionScript", "AppleScript", "Asp", "BASIC", "C", "C++", "Clojure", "COBOL", "ColdFusion", "Erlang", "Fortran", "Groovy", "Haskell", "Java", "JavaScript", "Lisp", "Perl", "PHP", "Python", "Ruby", "Scala", "Scheme"
+            ];
+            $("#autocomplete").autocomplete({
+                source: availableTags
+            });
+
+            $("#button").button();
+            $("#radioset").buttonset();
+
+            $("#tabs").tabs();
+
+            $("#dialog").dialog({
+                autoOpen: false,
+                width: 400,
+                buttons: [
+                    {
+                        text: "Ok",
+                        click: function () {
+                            $(this).dialog("close");
+                        }
+                    }, {
+                        text: "Cancel",
+                        click: function () {
+                            $(this).dialog("close");
+                        }
+                    }
+                ]
+            });
+
+            // Link to open the dialog
+            $("#dialog-link")
+                .click(function (event) {
+                    $("#dialog").dialog("open");
+                    event.preventDefault();
+                });
+
+            $("#datepicker").datepicker({
+                inline: true
+            });
+
+            $("#slider").slider({
+                range: true,
+                values: [
+                    17, 67
+                ]
+            });
+
+            $("#progressbar").progressbar({
+                value: 20
+            });
+
+            $("#spinner").spinner();
+
+            $("#menu").menu();
+
+            $("#tooltip").tooltip();
+
+            $("#selectmenu").selectmenu();
+
+            // Hover states on the static widgets
+            $("#dialog-link, #icons li")
+                .hover(function () {
+                    $(this).addClass("ui-state-hover");
+                }, function () {
+                    $(this).removeClass("ui-state-hover");
+                });
+        </script>
+    </body>
+</html>

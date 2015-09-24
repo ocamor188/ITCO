@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>ITCO - Servicios</title>
+	    
+	<link href="jquery-ui.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/stylesheets/amain.css"> 
+	
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+	
+	    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+	<style>
+
+	.demoHeaders {
+		margin-top: 2em;
+	}
+	#dialog-link {
+		padding: .4em 1em .4em 20px;
+		text-decoration: none;
+		position: relative;
+	}
+	#dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+	#icons {
+		margin: 0;
+		padding: 0;
+	}
+	#icons li {
+		margin: 2px;
+		position: relative;
+		padding: 4px 0;
+		cursor: pointer;
+		float: left;
+		list-style: none;
+	}
+	#icons span.ui-icon {
+		float: left;
+		margin: 0 4px;
+	}
+	.fakewindowcontain .ui-widget-overlay {
+		position: absolute;
+	}
+	select {
+		width: 200px;
+	}
+	</style>
+	
+</head>
+<body>
+    <!-- Header -->
+
+    <header class="primary-header container group">
+
+      <h1 class="logo" style="border-top-width: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+	    <img src="logo.png" alt="Smiley face" height="200" width="300">
+        <!--<a href="inicio.html">ITCO</a>-->
+      </h1>
+
+      <h3 class="tagline"></h3>
+
+      <nav class="nav primary-nav">
+          <ul>
+			  <li><a href="inicio.html">Inicio</a></li><!--
+			  --><li><a href="servicios.html">Servicios</a></li><!--
+			  --><li><a href="capacitacion.html">Capacitación</a></li><!--
+			  --><li><a href="beneficios.html">Beneficios</a></li><!--
+			  --><li><a href="contacto.html">Contacto</a></li>
+			</ul>
+      </nav>
+
+    </header>
+
+
+    <section class="row" style="padding-top: 0px;">
+      <div class="grid">
+
+     <!-- Tabs -->
+<div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">Seguridad</a></li>
+		<li><a href="#tabs-2">Buenas Practicas</a></li>
+		<li><a href="#tabs-3">ITIL</a></li>
+		<li><a href="#tabs-4">Temas Varios</a></li>
+	</ul>
+	<div id="tabs-1">
+		<ul>
+			<li>GOC - Implementación / mejora del Gobierno Corporativo.</a></li>
+			<li>PNC - Planes de Continuidad de Negocios.</a></li>
+			<li>ARI - Asesoría en Riesgos. (COSO y Normativa 2-10)</a></li>
+			<li>CAP - Capacitaciones en gobierno corporativo, procesos,riesgos, buenas prácticas de la industria y temas afines.</a></li>
+			<li>AUD - Auditorías Financieras, Riesgo, TI.</a></li>
+			<li>APN - Análisis y mejora de procesos de Negocio.</a></li>
+			<li>BIA - Análisis de impacto de Negocio.</a></li>
+			<li>AIN - Auditoría Interna.</a></li>
+		</ul>
+	</div>
+	<div id="tabs-2">
+		<ul>
+			<li>CTI - Consultorías de TI.</a></li>
+			<li>APC - Aplicación CobiT.</a></li>
+			<li>ATI - Auditoría de TI.</a></li>
+			<li>ADP - Administración de Proyectos.</a></li>
+			<li>DEM - Desarrollos a la medida.</a></li>
+			<li>OUT - Outsourcing.</a></li>
+			<li>SOP - Soporte Técnico.</a></li>
+			<li>NOR - Implementación Normativa de TI.</a></li>
+			<li>SUGEF  14-09, Contraloría.</a></li>
+		</ul>
+	</div>
+	<div id="tabs-3">
+		<ul>
+			<li><time pubdate="pubdate">noticia 1</a></li>
+			<li><time>noticia 2</a></li>
+			<li>SUGEF</a></li>
+		</ul>
+	</div>
+	<div id="tabs-4">
+		<ul>
+			<li><time pubdate="pubdate">noticia 1</a></li>
+			<li><time>noticia 2</a></li>
+			<li>SUGEF</a></li>
+		</ul>
+	</div>
+</div>
+</div>
+     
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="primary-footer container group">
+
+      <!--<small>&copy; Styles Conference</small>-->
+
+      <nav class="nav">
+          <ul>
+			  <li><a href="inicio.html">Inicio</a></li><!--
+			  --><li><a href="servicios.html">Servicios</a></li><!--
+			  --><li><a href="capacitacion.html">Capacitación</a></li><!--
+			  --><li><a href="beneficios.html">Beneficios</a></li><!--
+			  --><li><a href="contacto.html">Contacto</a></li>
+			</ul>
+      </nav>
+
+    </footer>
+	
+	
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+<script>
+
+$( "#accordion" ).accordion();
+
+
+
+var availableTags = [
+	"ActionScript",
+	"AppleScript",
+	"Asp",
+	"BASIC",
+	"C",
+	"C++",
+	"Clojure",
+	"COBOL",
+	"ColdFusion",
+	"Erlang",
+	"Fortran",
+	"Groovy",
+	"Haskell",
+	"Java",
+	"JavaScript",
+	"Lisp",
+	"Perl",
+	"PHP",
+	"Python",
+	"Ruby",
+	"Scala",
+	"Scheme"
+];
+$( "#autocomplete" ).autocomplete({
+	source: availableTags
+});
+
+
+
+$( "#button" ).button();
+$( "#radioset" ).buttonset();
+
+
+
+$( "#tabs" ).tabs();
+
+
+
+$( "#dialog" ).dialog({
+	autoOpen: false,
+	width: 400,
+	buttons: [
+		{
+			text: "Ok",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		{
+			text: "Cancel",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		}
+	]
+});
+
+// Link to open the dialog
+$( "#dialog-link" ).click(function( event ) {
+	$( "#dialog" ).dialog( "open" );
+	event.preventDefault();
+});
+
+
+
+$( "#datepicker" ).datepicker({
+	inline: true
+});
+
+
+
+$( "#slider" ).slider({
+	range: true,
+	values: [ 17, 67 ]
+});
+
+
+
+$( "#progressbar" ).progressbar({
+	value: 20
+});
+
+
+
+$( "#spinner" ).spinner();
+
+
+
+$( "#menu" ).menu();
+
+
+
+$( "#tooltip" ).tooltip();
+
+
+
+$( "#selectmenu" ).selectmenu();
+
+
+// Hover states on the static widgets
+$( "#dialog-link, #icons li" ).hover(
+	function() {
+		$( this ).addClass( "ui-state-hover" );
+	},
+	function() {
+		$( this ).removeClass( "ui-state-hover" );
+	}
+);
+</script>
+</body>
+</html>
