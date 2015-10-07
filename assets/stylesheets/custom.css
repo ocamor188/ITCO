@@ -1,0 +1,86 @@
+body {
+  padding-top: 50px;
+}
+
+.navbar {
+	/* min-height: 180px; */
+	background: #3d7e0a none repeat scroll 0 0;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+	background-color: #d8e5ce;
+	color: #555;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #ffffff;
+}
+
+#footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background: #3d7e0a none repeat scroll 0 0;
+}
+
+#footer > li > a {
+	color: #ffffff;
+}
+
+.navbar-brand{
+    line-height: 150px;
+    height: 150px;
+    padding-top: 0;
+}
+
+/*servicios css*/
+
+.accordion {
+ position: relative;
+ background-color: #fff;
+ display: inline-block;
+ width: 100%;
+ border-top: 1px solid #f1f4f3;
+ border-bottom: 1px solid #f1f4f3;
+ font-weight: 700;
+ color: #74777b;
+ vertical-align: middle;
+}
+
+.accordion .fa {
+ position: relative;
+ float: right;
+}
+
+.accordion h4 {
+ position: relative;
+ top: 0.8em;
+ margin: 0;
+ font-size: 14px;
+ font-weight: 700;
+}
+
+.accordion a {
+ position: relative;
+ display: block;
+ color: #74777b;
+ padding: 1em 1em 2.5em 1em;
+ text-decoration: none;
+}
+
+.accordion a:hover {
+ text-decoration: none;
+ color: #2cc185;
+ background-color: #e7ecea;
+ transition: 0.3s;
+}
+
+.accordion-desc {
+ background-color: #f1f4f3;
+ color: #74777b;
+ z-index: 2;
+ padding: 20px 15px;
+}
