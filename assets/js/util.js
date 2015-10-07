@@ -55,7 +55,8 @@ $(function() {
 
 function callbackServicios() {
 	$(".accordion-desc").fadeOut(0);
-	$(".accordion").click(function() {
+	$(".accordion").click(function(event) {
+		event.preventDefault();
 		$(".accordion-desc").not($(this).next()).slideUp('fast');
 		$(this).next().slideToggle(400);
 	});
