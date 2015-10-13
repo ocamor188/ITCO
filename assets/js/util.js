@@ -1,5 +1,5 @@
 $(function() {
-	$("li").click(function(event) {
+	$("#navbar li, #footer li").click(function(event) {
 		// remove classes from all
 		$("li").removeClass("active");
 		// add class to the one we clicked
