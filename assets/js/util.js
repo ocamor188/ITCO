@@ -23,7 +23,7 @@ $(function() {
 			$("#mainContainer").load("beneficios.html");
 		}
 		if($(this).attr('id') == "contact") {
-			$("#mainContainer").load("mision.html");
+			$("#mainContainer").load("contacto.html");
 		}
 		// footer
 		if($(this).attr('id') == "footerHome") {
@@ -47,7 +47,7 @@ $(function() {
 			$('#benefits').addClass("active");
 		}
 		if($(this).attr('id') == "footerContact") {
-			$("#mainContainer").load("mision.html");
+			$("#mainContainer").load("contacto.html");
 			$('#contact').addClass("active");
 		}
 	});

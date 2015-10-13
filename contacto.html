@@ -1,0 +1,119 @@
+<section id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 text-center">
+				<h2 class="section-heading">&#161;Vamos a ponernos en contacto&#33;</h2>
+				<hr class="primary">
+				<p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+			</div>
+			<div class="col-lg-4 col-lg-offset-2 text-center">
+				<i class="fa fa-phone fa-3x wow bounceIn"></i>
+				<p>123-456-6789</p>
+			</div>
+			<div class="col-lg-4 text-center">
+				<i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+				<p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<form name="sentMessage" id="contactForm" novalidate>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Su Nombre *" id="name" required data-validation-required-message="Por favor escriba su nombre.">
+								<p class="help-block text-danger"></p>
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" placeholder="Su Correo Electr&#243;nico *" id="email" required data-validation-required-message="Por favor escriba su correo electr&#243;nico.">
+								<p class="help-block text-danger"></p>
+							</div>
+							<div class="form-group">
+								<input type="tel" class="form-control" placeholder="Su Tel&#233;fono *" id="phone" required data-validation-required-message="Por favor escriba su n&#250;mero de tel&#233;fono.">
+								<p class="help-block text-danger"></p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<textarea class="form-control" placeholder="Su Mensaje *" id="message" style="height: 236px;" required data-validation-required-message="Por favor escriba su mensaje."></textarea>
+								<p class="help-block text-danger"></p>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="col-lg-12 text-center">
+							<div id="success"></div>
+							<button type="submit" class="btn btn-xl">Enviar Mensaje</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function() {
+			$("input,textarea").jqBootstrapValidation({
+				preventSubmit: true,
+				submitError: function($form, event, errors) {
+					// additional error messages or events
+				},
+				submitSuccess: function($form, event) {
+					event.preventDefault(); // prevent default submit behaviour
+					// get values from FORM
+					var name = $("input#name").val();
+					var email = $("input#email").val();
+					var phone = $("input#phone").val();
+					var message = $("textarea#message").val();
+					var firstName = name; // For Success/Failure Message
+					// Check for white space in name for Success/Fail message
+					if (firstName.indexOf(' ') >= 0) {
+						firstName = name.split(' ').slice(0, -1).join(' ');
+					}
+					$.ajax({
+						url: "././mail/contact_me.php",
+						type: "POST",
+						data: {
+							name: name,
+							phone: phone,
+							email: email,
+							message: message
+						},
+						cache: false,
+						success: function() {
+							// Success message
+							$('#success').html("<div class='alert alert-success'>");
+							$('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+								.append("</button>");
+							$('#success > .alert-success')
+								.append("<strong>Your message has been sent. </strong>");
+							$('#success > .alert-success')
+								.append('</div>');
+
+							//clear all fields
+							$('#contactForm').trigger("reset");
+						},
+						error: function() {
+							// Fail message
+							$('#success').html("<div class='alert alert-danger'>");
+							$('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+								.append("</button>");
+							$('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!");
+							$('#success > .alert-danger').append('</div>');
+							//clear all fields
+							$('#contactForm').trigger("reset");
+						},
+					})
+				},
+				filter: function() {
+					return $(this).is(":visible");
+				},
+			});
+		});		
+	</script>
+</section>
