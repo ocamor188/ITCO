@@ -137,11 +137,17 @@ body {
 }
 
 /* beneficios style */
-#apDiv10 {
+#apDiv13 {
 	/* padding-left: 400px; */
 }
-#apDiv10 ul { 
+#apDiv13 ul { 
+	line-height: 200%;
 	list-style-type: none; 
+}
+
+#apDiv10, #apDiv11, #apDiv12, #apDiv14 {
+	text-align: justify;
+    text-justify: inter-word;
 }
 
 section#contact .form-group {
