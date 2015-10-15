@@ -149,6 +149,13 @@ body {
 	text-align: justify;
     text-justify: inter-word;
 }
+#apDiv15 ul > li{
+	color:green;
+}
+
+#apDiv15 ul > li >span{
+	color:black;
+}
 
 section#contact .form-group {
     margin-bottom: 25px;
